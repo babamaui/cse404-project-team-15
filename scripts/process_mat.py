@@ -8,6 +8,7 @@ def process_matfile(file_name):
     # Convert to a dictionary for easier access
     wiki_dict = {key: wiki_data[key] for key in wiki_data.dtype.names}
 
+    # Each value is a 2D array, the first index is what contains the data (only 1 index in the array)
     print(wiki_dict["full_path"][0].squeeze())
 
     # # Extract the data of 5 people
