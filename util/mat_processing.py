@@ -11,7 +11,6 @@ def process_matfile(file_name):
 
     for i in range(len(data_dict['full_path'][0])):
         filename = data_dict['full_path'][0][i][0]
-        print(filename)
         filename_dict[filename] = {
             'dob': data_dict['dob'][0][i],
             'photo_taken': data_dict['photo_taken'][0][i],
